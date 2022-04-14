@@ -92,7 +92,7 @@ Configuration steps:
         + `Built-in`: Provides a list of Distributed Cloud Services provided set of generic policies.
         + `Custom`: Provides a list of user defined policies which have been defined under `Manage` -> `Secrets`.
     1. Enter or paste the text or blindfold value of the AWS Secret Key.
-    1. For a text secret, click on the Blindfold button to generate the blindfold key based on the AWS Secret Key. To see the blindfold result, click `Edit` after the Blindfold process is complete.
+    1. For a text secret, click on the `Blindfold` button to generate the blindfold key based on the AWS Secret Key. To see the blindfold result, click `Edit` after the Blindfold process is complete.
     1. Once the key has been generated or entered, click `Apply` and then click `Save and Exit` button to exit the wizard and save your AWS credentials for use with Distributed Cloud Services.
 
 <br>
