@@ -13,7 +13,7 @@
 
 
 ## Use Case: MCN with Azure Virtual Network (VNet) Peering
-This reference architecture is for the customer who has their applications running in multiple virtual networks across different Regions and Availability Zones.
+This reference architecture is for the customer who has their applications running in multiple Azure Virtual Networks across different Regions and Availability Zones.
 
 
 In this scenario, the customer can utilize F5 Distributed Cloud to work around [constraints for (Azure) peered virtual networks](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview#constraints-for-peered-virtual-networks).
@@ -32,13 +32,11 @@ In this scenario, the customer can utilize F5 Distributed Cloud to work around [
 
 <br>
 
-<!--
-
 ### Prerequisites
 This guide assumes the following prerequisites:
 + That you have an existing [F5® Distributed Cloud Account](https://console.ves.volterra.io/) and access to the online portal. In case you do not have an account, see [Create an Account](https://docs.cloud.f5.com/docs/quick-start/on-board).
 
-+ AWS account with credentials, tenant definitions and certificates already created.
++ Azure account with credentials, subscription information and certificates or service principle already created.
 
 Note: Refer to the required permissions to create cloud resources in the [Cloud Credentials Reference](https://docs.cloud.f5.com/docs/reference/cloud-cred-ref) guides. These guides also provide instructions to create the roles and associated service accounts using the cloud formation templates.
 
@@ -60,7 +58,7 @@ Configuration steps:
     1. Enter a name for the credential you are creating.
     1. Optionally add labels and a description to this entry.
 1. Select cloud credential type.
-    1. Select a cloud credential type from the drop-down menu. There are:
+    1. Select `Azure Client Secret for Service Principal` from the drop-down menu. There are:
         + `AWS Programmatic Access Credentials`
         + `Azure Credential Client Certificate`
         + `Azure Client Secret for Service Principal`
@@ -69,33 +67,29 @@ Configuration steps:
 <br>
 
 ### 2. Configure Credentials
-**AWS Programmable Access Credentials**
+**Azure Client Secret for Service Principal**
 
-Perform the following steps for AWS programmable access credentials:
-
-```
-Note: Temporary security credentials such as credentials generated using AWS STS are not supported.
-```
+Perform the following steps for configuring Azure Service Principal:
 
 Configuration steps:
-1. Obtain your access key ID and secret from AWS.
-
-    Retrieve your access key id and secret you intend to use for accessing AWS API services from your AWS Management Console IAM Dashboard ([AWS IAM Reference](https://docs.aws.amazon.com/iam/index.html)).
-1. Set the access key and configure secret.
-    1. Select `AWS Programmable Access Credentials` for the `Select Cloud Credential Type` field.
-    1. Enter the AWS Access Key ID that you retrieved from your AWS account.
-    1. Configure Secret Access Key by clicking on the `Configure` link below where you entered the Access Key ID.
-    1. Secret information can be one of two types via drop-down.
+1. Please follow [these steps](https://gitlab.com/volterra.io/cloud-credential-templates/-/tree/master/azure#how-to-create-service-principal-in-azure-to-provision-volterra-azure-vnet-site) to obtain `Application (Client) ID`, `Subscription ID`, `Directory (Tenant) ID`, and `Azure Client Secret`.
+1. Enter the identities and configure secret.
+    1. Select `Azure Client Secret for Service Principal` for the `Select Cloud Credential Type` field.
+    1. Enter `Application (Client) ID`, `Subscription ID` and `Directory (Tenant) ID` that you retrieved from your Azure account.
+    1. Configure Azure Client Secret by clicking on the `Configure` link below where you entered the Tenant ID.
+    1. Secrete information can be one of two types via drop-down.
         + `Blindfold Secret`: Used for secrets managed by Distributed Cloud Secret Management Service (Recommended as this service provides a high level of security).
         + `Clear Secret`: Used for secrets that are not encrypted.
     1. Policy information can be one of two types via drop-down.
         + `Built-in`: Provides a list of Distributed Cloud Services provided set of generic policies.
         + `Custom`: Provides a list of user defined policies which have been defined under `Manage` -> `Secrets`.
-    1. Enter or paste the text or blindfold value of the AWS Secret Key.
-    1. For a text secret, click on the Blindfold button to generate the blindfold key based on the AWS Secret Key. To see the blindfold result, click `Edit` after the Blindfold process is complete.
-    1. Once the key has been generated or entered, click `Apply` and then click `Save and Exit` button to exit the wizard and save your AWS credentials for use with Distributed Cloud Services.
+      1. Enter or paste the text or blindfold value of the `Azure Client Secret for Service Principal`.
+      1. For a text secret, click on the `Blindfold` button to generate the blindfold key based on the `Azure Client Secret`. To see the blindfold result, click `Edit` after the Blindfold process is complete.
+      1. Once the secret has been generated or entered, click `Apply` and then click `Save and Exit` button to exit the wizard and save your Azure credentials for use with Distributed Cloud Services.
 
 <br>
+
+<!--
 
 ### 3. Create AWS Site
 
