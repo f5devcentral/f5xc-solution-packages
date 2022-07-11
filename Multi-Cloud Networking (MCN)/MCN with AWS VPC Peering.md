@@ -249,7 +249,6 @@ The following steps explain the required actions for the process of origin pool 
 
 Configuration steps:
 1. Navigate to origin pool configuration.
-    1. 
 1. Start the origin pool creation process.
 1. Configure the origin servers.
 1. Optionally, configure health check.
