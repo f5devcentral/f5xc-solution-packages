@@ -36,9 +36,7 @@ Implementing the prescribed steps as outlined will allow the customer to achieve
 ## Solution Components
 *[TODO: F5 solutions and SKUs necessary to acheive customer outcomes, for example]*
 + F5 Distributed Cloud (platform)
-+ F5 Distributed Cloud WAAP 
-+ Customer Web Application stack
-+ 3rd Party cloud provider where the application is hosted (AWS / Azure / GCP)
++ Proposed DNS Zone to be created on F5 Distributed Cloud
 
 <br>
 
