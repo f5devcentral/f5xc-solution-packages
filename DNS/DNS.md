@@ -22,9 +22,9 @@ In this scenario, the customer can create publicly hosted, primary and secondary
 ## Customer Success Outcomes
 Implementing the prescribed steps as outlined will allow the customer to achieve the following objectives / outcomes:
 
-+ *[TODO: Benefit or outcome]*
-+ *[TODO: Benefit or outcome]*
-+ *[TODO: Benefit or outcome]*
++ Create Primary DNS Zone in F5 Distributed Cloud via GUI
++ Create Secondary DNS Zone in F5 Distributed Cloud via GUI
++ Create Primary DNS Zone in F5 Distributed Cloud via API
 
 <br>
 
