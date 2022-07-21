@@ -34,14 +34,21 @@ Implementing the prescribed steps as outlined will allow the customer to achieve
 <br>
 
 ## Solution Components
-*[TODO: F5 solutions and SKUs necessary to acheive customer outcomes, for example]*
-+ F5 Distributed Cloud (platform)
-+ Proposed DNS Zone to be created on F5 Distributed Cloud
+ ## SKU List
+ + F5-V-O-ALL-BASE-PKG: Distributed Cloud Services Base Package (/mth) Org
+    * DNS Zones: 250 Included Base Package (Additional - $2/Zone)
+    * DNS Records: Unlimited (in Org Plan)
+
+ ## Free/Paid-Trial Tiers
+ + Individual Tier - $25/month
+ + Teams Tier - $200/month
+ + Pricing Details - https://www.f5.com/cloud/pricing 
 
 <br>
 
 ## Considerations and Recommendations
-*[TODO: Recommendations and considerations that are going to be important to ensure customer success]*
+For Existing F5 XC Customers - Use customer's Cloud Console to create Primary and Secondary DNS Zones
+For prospects - Request PoV tenant by creating a Salesforce Opp 
 	
 <br>
 
@@ -51,9 +58,9 @@ Implementing the prescribed steps as outlined will allow the customer to achieve
 <br>
 
 ## Prerequisites
-This guide assumes the following prerequisites:
-+ That you have an existing [F5® Distributed Cloud Account](https://console.ves.volterra.io/) and access to the online portal. In case you do not have an account, see [Create an Account](https://docs.cloud.f5.com/docs/quick-start/on-board).
 
++ Access to F5 Distributed Cloud Console (PoC/PoV Tenant or Org plan)
++ Proposed DNS Zone to be created on F5 Distributed Cloud
 <br>
 
 ## Configuration - Primary DNS
