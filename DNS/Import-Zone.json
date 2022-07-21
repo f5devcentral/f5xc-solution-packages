@@ -1,0 +1,18 @@
+{
+    "name": "string",
+    "namespace": "string",
+    "primary_server": "string",
+    "tsig_key_algorithm": "HMAC_MD5",
+    "tsig_key_name": "string",
+    "tsig_key_value": {
+      "blindfold_secret_info": {
+        "decryption_provider": "string",
+        "location": "string",
+        "store_provider": "string"
+      },
+      "clear_secret_info": {
+        "provider": "string",
+        "url": "string"
+      }
+    }
+  }

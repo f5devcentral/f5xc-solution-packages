@@ -1,0 +1,192 @@
+{
+    "metadata": {
+    "annotations": { },
+    "description": "string",
+    "disable": true,
+    "labels": { },
+    "name": "string",
+    "namespace": "string"
+    },
+    "spec": {
+    "primary": {
+    "default_rr_set_group": [
+    {
+    "a_record": {
+    "name": "string",
+    "values": [
+    "string"
+    ]
+    },
+    "aaaa_record": {
+    "name": "string",
+    "values": [
+    "string"
+    ]
+    },
+    "alias_record": {
+    "value": "string"
+    },
+    "caa_record": {
+    "name": "string",
+    "values": [
+    {
+    "flags": 0,
+    "tag": "string",
+    "value": "string"
+    }
+    ]
+    },
+    "cname_record": {
+    "name": "string",
+    "value": "string"
+    },
+    "mx_record": {
+    "name": "string",
+    "values": [
+    {
+    "domain": "string",
+    "priority": 0
+    }
+    ]
+    },
+    "ns_record": {
+    "name": "string",
+    "values": [
+    "string"
+    ]
+    },
+    "ptr_record": {
+    "name": "string",
+    "values": [
+    "string"
+    ]
+    },
+    "srv_record": {
+    "name": "string",
+    "values": [
+    {
+    "port": 0,
+    "priority": 0,
+    "target": "string",
+    "weight": 0
+    }
+    ]
+    },
+    "ttl": 0,
+    "txt_record": {
+    "name": "string",
+    "values": [
+    "string"
+    ]
+    }
+    }
+    ],
+    "default_soa_parameters": { },
+    "rr_set_group": [
+    {
+    "metadata": {
+    "description": "string",
+    "name": "string"
+    },
+    "rr_set": [
+    {
+    "a_record": {
+    "name": "string",
+    "values": [
+    "string"
+    ]
+    },
+    "aaaa_record": {
+    "name": "string",
+    "values": [
+    "string"
+    ]
+    },
+    "alias_record": {
+    "value": "string"
+    },
+    "caa_record": {
+    "name": "string",
+    "values": [
+    {
+    "flags": null,
+    "tag": null,
+    "value": null
+    }
+    ]
+    },
+    "cname_record": {
+    "name": "string",
+    "value": "string"
+    },
+    "mx_record": {
+    "name": "string",
+    "values": [
+    {
+    "domain": null,
+    "priority": null
+    }
+    ]
+    },
+    "ns_record": {
+    "name": "string",
+    "values": [
+    "string"
+    ]
+    },
+    "ptr_record": {
+    "name": "string",
+    "values": [
+    "string"
+    ]
+    },
+    "srv_record": {
+    "name": "string",
+    "values": [
+    {
+    "port": null,
+    "priority": null,
+    "target": null,
+    "weight": null
+    }
+    ]
+    },
+    "ttl": 0,
+    "txt_record": {
+    "name": "string",
+    "values": [
+    "string"
+    ]
+    }
+    }
+    ]
+    }
+    ],
+    "soa_parameters": {
+    "expire": 0,
+    "negative_ttl": 0,
+    "refresh": 0,
+    "retry": 0,
+    "ttl": 0
+    }
+    },
+    "secondary": {
+    "primary_servers": [
+    "string"
+    ],
+    "tsig_key_algorithm": "HMAC_MD5",
+    "tsig_key_name": "string",
+    "tsig_key_value": {
+    "blindfold_secret_info": {
+    "decryption_provider": "string",
+    "location": "string",
+    "store_provider": "string"
+    },
+    "clear_secret_info": {
+    "provider": "string",
+    "url": "string"
+    }
+    }
+    }
+    }
+    }

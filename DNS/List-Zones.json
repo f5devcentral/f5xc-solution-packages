@@ -1,0 +1,377 @@
+{
+    "errors": [
+      {
+        "code": "EOK",
+        "error_obj": {
+          "type_url": "string",
+          "value": "string"
+        },
+        "message": "string"
+      }
+    ],
+    "items": [
+      {
+        "annotations": {},
+        "description": "string",
+        "disabled": true,
+        "get_spec": {
+          "domain": "string",
+          "primary": {
+            "admin": "string",
+            "default_rr_set_group": [
+              {
+                "a_record": {
+                  "name": "string",
+                  "values": [
+                    "string"
+                  ]
+                },
+                "aaaa_record": {
+                  "name": "string",
+                  "values": [
+                    "string"
+                  ]
+                },
+                "alias_record": {
+                  "value": "string"
+                },
+                "caa_record": {
+                  "name": "string",
+                  "values": [
+                    {}
+                  ]
+                },
+                "cname_record": {
+                  "name": "string",
+                  "value": "string"
+                },
+                "mx_record": {
+                  "name": "string",
+                  "values": [
+                    {}
+                  ]
+                },
+                "ns_record": {
+                  "name": "string",
+                  "values": [
+                    "string"
+                  ]
+                },
+                "ptr_record": {
+                  "name": "string",
+                  "values": [
+                    "string"
+                  ]
+                },
+                "srv_record": {
+                  "name": "string",
+                  "values": [
+                    {}
+                  ]
+                },
+                "ttl": 0,
+                "txt_record": {
+                  "name": "string",
+                  "values": [
+                    "string"
+                  ]
+                }
+              }
+            ],
+            "default_soa_parameters": {},
+            "rr_set_group": [
+              {
+                "metadata": {
+                  "description": "string",
+                  "name": "string"
+                },
+                "rr_set": [
+                  {
+                    "a_record": {
+                      "values": []
+                    },
+                    "aaaa_record": {
+                      "values": []
+                    },
+                    "alias_record": {},
+                    "caa_record": {
+                      "values": []
+                    },
+                    "cname_record": {},
+                    "mx_record": {
+                      "values": []
+                    },
+                    "ns_record": {
+                      "values": []
+                    },
+                    "ptr_record": {
+                      "values": []
+                    },
+                    "srv_record": {
+                      "values": []
+                    },
+                    "ttl": 0,
+                    "txt_record": {
+                      "values": []
+                    }
+                  }
+                ]
+              }
+            ],
+            "serial": 0,
+            "soa_parameters": {
+              "expire": 0,
+              "negative_ttl": 0,
+              "refresh": 0,
+              "retry": 0,
+              "ttl": 0
+            }
+          },
+          "secondary": {
+            "last_axfr_timestamp": "2019-08-24T14:15:22Z",
+            "primary_servers": [
+              "string"
+            ],
+            "tsig_key_algorithm": "HMAC_MD5",
+            "tsig_key_name": "string",
+            "tsig_key_value": {
+              "blindfold_secret_info": {
+                "decryption_provider": "string",
+                "location": "string",
+                "store_provider": "string"
+              },
+              "clear_secret_info": {
+                "provider": "string",
+                "url": "string"
+              }
+            },
+            "zone_file": "string"
+          }
+        },
+        "labels": {},
+        "metadata": {
+          "annotations": {},
+          "description": "string",
+          "disable": true,
+          "labels": {},
+          "name": "string",
+          "namespace": "string"
+        },
+        "name": "string",
+        "namespace": "string",
+        "object": {
+          "metadata": {
+            "annotations": {},
+            "description": "string",
+            "disable": true,
+            "labels": {},
+            "name": "string",
+            "namespace": "string",
+            "uid": "string"
+          },
+          "spec": {
+            "gc_spec": {
+              "primary": {
+                "admin": "string",
+                "default_rr_set_group": [
+                  {
+                    "a_record": {
+                      "values": []
+                    },
+                    "aaaa_record": {
+                      "values": []
+                    },
+                    "alias_record": {},
+                    "caa_record": {
+                      "values": []
+                    },
+                    "cname_record": {},
+                    "mx_record": {
+                      "values": []
+                    },
+                    "ns_record": {
+                      "values": []
+                    },
+                    "ptr_record": {
+                      "values": []
+                    },
+                    "srv_record": {
+                      "values": []
+                    },
+                    "ttl": 0,
+                    "txt_record": {
+                      "values": []
+                    }
+                  }
+                ],
+                "default_soa_parameters": {},
+                "rr_set_group": [
+                  {
+                    "metadata": {},
+                    "rr_set": [
+                      null
+                    ]
+                  }
+                ],
+                "serial": 0,
+                "soa_parameters": {
+                  "expire": 0,
+                  "negative_ttl": 0,
+                  "refresh": 0,
+                  "retry": 0,
+                  "ttl": 0
+                }
+              },
+              "secondary": {
+                "last_axfr_timestamp": "2019-08-24T14:15:22Z",
+                "primary_servers": [
+                  "string"
+                ],
+                "tsig_key_algorithm": "HMAC_MD5",
+                "tsig_key_name": "string",
+                "tsig_key_value": {
+                  "blindfold_secret_info": {
+                    "decryption_provider": "string",
+                    "location": "string",
+                    "store_provider": "string"
+                  },
+                  "clear_secret_info": {
+                    "provider": "string",
+                    "url": "string"
+                  }
+                },
+                "zone_file": "string"
+              },
+              "service_instance_id": "string",
+              "subscription_id": "string"
+            }
+          },
+          "system_metadata": {
+            "creation_timestamp": "2019-08-24T14:15:22Z",
+            "creator_class": "string",
+            "creator_cookie": "string",
+            "creator_id": "string",
+            "deletion_timestamp": "2019-08-24T14:15:22Z",
+            "finalizers": [
+              "string"
+            ],
+            "initializers": {
+              "pending": [
+                {
+                  "name": "string"
+                }
+              ],
+              "result": {
+                "code": 0,
+                "reason": "string",
+                "status": "string"
+              }
+            },
+            "labels": {},
+            "modification_timestamp": "2019-08-24T14:15:22Z",
+            "namespace": [
+              {
+                "kind": "string",
+                "name": "string",
+                "namespace": "string",
+                "tenant": "string",
+                "uid": "string"
+              }
+            ],
+            "object_index": 0,
+            "owner_view": {
+              "kind": "string",
+              "name": "string",
+              "namespace": "string",
+              "uid": "string"
+            },
+            "sre_disable": true,
+            "tenant": "string",
+            "trace_info": "string",
+            "uid": "string",
+            "vtrp_id": "string",
+            "vtrp_stale": true
+          }
+        },
+        "owner_view": {
+          "kind": "string",
+          "name": "string",
+          "namespace": "string",
+          "uid": "string"
+        },
+        "status_set": [
+          {
+            "conditions": [
+              {
+                "hostname": "string",
+                "last_update_time": "2019-08-24T14:15:22Z",
+                "reason": "string",
+                "service_name": "string",
+                "status": "string",
+                "type": "string"
+              }
+            ],
+            "metadata": {
+              "creation_timestamp": "2019-08-24T14:15:22Z",
+              "creator_class": "string",
+              "creator_id": "string",
+              "publish": "STATUS_DO_NOT_PUBLISH",
+              "status_id": "string",
+              "uid": "string",
+              "vtrp_id": "string",
+              "vtrp_stale": true
+            },
+            "object_refs": [
+              {
+                "kind": "string",
+                "name": "string",
+                "namespace": "string",
+                "tenant": "string",
+                "uid": "string"
+              }
+            ],
+            "verification_status": {
+              "deployment_status": "DNS_ZONE_ACTIVE",
+              "volterra_nameservers": [
+                "string"
+              ]
+            }
+          }
+        ],
+        "system_metadata": {
+          "creation_timestamp": "2019-08-24T14:15:22Z",
+          "creator_class": "string",
+          "creator_id": "string",
+          "deletion_timestamp": "2019-08-24T14:15:22Z",
+          "finalizers": [
+            "string"
+          ],
+          "initializers": {
+            "pending": [
+              {
+                "name": "string"
+              }
+            ],
+            "result": {
+              "code": 0,
+              "reason": "string",
+              "status": "string"
+            }
+          },
+          "labels": {},
+          "modification_timestamp": "2019-08-24T14:15:22Z",
+          "object_index": 0,
+          "owner_view": {
+            "kind": "string",
+            "name": "string",
+            "namespace": "string",
+            "uid": "string"
+          },
+          "tenant": "string",
+          "uid": "string"
+        },
+        "tenant": "string",
+        "uid": "string"
+      }
+    ]
+  }
