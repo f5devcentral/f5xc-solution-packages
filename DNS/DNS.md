@@ -99,13 +99,13 @@ Configuration steps:
 
    Optional configuration steps for RR Set Group:
    1. This step configures specific groups for resource record sets. A resource record sets group allows grouping of DNS records to make it easier to manage them. For example, you can group DNS records that belong to the same application.
-   1. Expand `Show Avanced Fileds` option.
+   1. Expand `Show Advanced Fields` option.
    1. Click `Add Item`, enter name of RR group name.
 
    ![](./Screenshots/2-5.png)
 
    1. Enter a `Domain Name` in the Metadata section.
-   1. Click ``Add Item` in the `Resource Record Sets` section.
+   1. Click `Add Item` in the `Resource Record Sets` section.
 
    ![](./Screenshots/2-6.png)
 
