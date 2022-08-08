@@ -67,9 +67,9 @@ For prospects - Request PoV tenant by creating a Salesforce Opp
 <br>
 
 ### 1. Navigate to F5XC Portal
-Login as NetOps, DevOps, or SecOps user role;
+Login as NetOps, DevOps, or SecOps user role; select 'DNS Management' from Common services.
 
-Select 'DNS Management' from Common services.
+![](./Screenshots/1.png)
 
 <br>
 
@@ -77,19 +77,46 @@ Select 'DNS Management' from Common services.
 Perform the following steps to create primary DNS:
 
 Configuration steps:
-1. Select `Domain Management` -> `DNS Management`.
+1. Navigate to `DNS Management`.
+1. Select `Domain Management`.
 1. Click `Add DNS Zone`.
+
+![](./Screenshots/2-1.png)
+
 1. Enter a name for `Domain Name`.
 1. Select `Primary DNS Configuration` as `Zone Type`.
 1. Click `Configure`.
-1. Click `Add Item` to create resource records, for example, A, AAAA, CNAME, ALIAS etc.
-1. Click `Add Item` to save the configuration, and `Apply`.
 
-Optional configuration steps for RR Set Group:
-1. This is an advanced feature,  customer can group the RRs based on applications,  for example, app1, app2 ,etc.
-1. Expand `Show Avanced Fileds` option
-1. Click `Add Item`, enter name of RR group name.
-1. Add RRs, for example A, AAAA, CNAME ,etc.
+![](./Screenshots/2-2.png)
+
+1. Click `Add Item` to create resource records, for example, A, AAAA, CNAME, ALIAS etc.
+
+![](./Screenshots/2-3.png)
+
+1. Enter the value and click `Apply` to save the configuration.
+
+![](./Screenshots/2-4.png)
+
+   Optional configuration steps for RR Set Group:
+   1. This step configures specific groups for resource record sets. A resource record sets group allows grouping of DNS records to make it easier to manage them. For example, you can group DNS records that belong to the same application.
+   1. Expand `Show Avanced Fileds` option.
+   1. Click `Add Item`, enter name of RR group name.
+
+   ![](./Screenshots/2-5.png)
+
+   1. Enter a `Domain Name` in the Metadata section.
+   1. Click ``Add Item` in the `Resource Record Sets` section.
+
+   ![](./Screenshots/2-6.png)
+
+   1. Select a record type under the `Record Set` drop down menu, and set the fields as per your record type selection. Click `Apply` to save the configuration.
+
+   ![](./Screenshots/2-7.png)
+
+
+1. Click `Save and Exit` to finish creating primary DNS.
+
+![](./Screenshots/2-8.png)
 
 <br>
 
@@ -98,6 +125,8 @@ Optional configuration steps for RR Set Group:
 1. Verify `Primary` is listed under `Type` column.
 1. Verify `DNS Zone Deployment Status` as `DNS_ZONE_ACTIVE`, after few seconds later adding the Primary Zone.
 1. Name servers listed under `Name Servers`, this NS information is needed in next step, to add it in customer's TLD or Sub-domain.
+
+![](./Screenshots/2-9.png)
 
 <br>
 
@@ -124,7 +153,7 @@ Perform the following steps to create primary DNS:
 
 Configuration steps:
 1. Select `Domain Management` -> `DNS Management`
-1. Click `Add DNS Zone`.
+1. Click `Add Zone`.
 1. Enter a name for `Domain Name`.
 1. Select `Secondary DNS Configuration` as `Zone Type`.
 1. Click `Configure`.
