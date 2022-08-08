@@ -28,10 +28,12 @@ Implementing the prescribed steps as outlined will allow the customer to achieve
 
 <br>
 
+<!--
 ## Architecture
 *[TODO: Example network architecture diagram]*
 
 <br>
+-->
 
 ## Solution Components
  ## SKU List
@@ -52,10 +54,12 @@ For prospects - Request PoV tenant by creating a Salesforce Opp
 	
 <br>
 
+<!--
 ## Scalability
 *[TODO: Any scalability considerations or information the customer should be aware of or would help them be successful]*
 
 <br>
+-->
 
 ## Prerequisites
 
@@ -142,9 +146,9 @@ Verify the configured RRs are resolving correctly for the sub-domain.
 <br>
 
 ### 1. Navigate to F5XC Portal
-Login as NetOps, DevOps, or SecOps user role;
+Login as NetOps, DevOps, or SecOps user role; select `DNS Management` from Common services.
 
-Select `DNS Management` from Common services.
+![](./Screenshots/3.png)
 
 <br>
 
@@ -152,14 +156,32 @@ Select `DNS Management` from Common services.
 Perform the following steps to create primary DNS:
 
 Configuration steps:
-1. Select `Domain Management` -> `DNS Management`
-1. Click `Add Zone`.
-1. Enter a name for `Domain Name`.
-1. Select `Secondary DNS Configuration` as `Zone Type`.
-1. Click `Configure`.
-1. Enter DNS primary server IP at `Zone Configuration` -> `List of DNS primary server IP`.
-1. If TSIG is configured on primary, enter `TSIG Key name`, `TSIG Key algorithm`, and select `Secret` in `Clear Secret` ( Blindfold secret is available in Aug release) and copy the key string.
-1. Click `Apply` and `Save and Exit`.
+1. Navigate to `DNS Management`.
+2. Select `Domain Management`.
+3. Click `Add Zone`.
+
+![](./Screenshots/4-1.png)
+
+4. Click `Add Zone`.
+5. Enter a name for `Domain Name`.
+6. Select `Secondary DNS Configuration` as `Zone Type`.
+
+![](./Screenshots/4-2.png)
+
+7. Click `Configure`.
+
+![](./Screenshots/4-3.png)
+
+8. Enter `DNS primary server IP` in the `Zone Configuration` section.
+9. Enter the Transaction Signature (TSIG) key name in the TSIG key name as used in TSIG protocol extension field.
+10. Click on the TSIG Key algorithm field and select an algorithm from the drop-down. Ensure that the key value for the key specified is compatible with the algorithm being selected.
+`Note: Configuring TSIG key and algorithm is optional.`
+11. Encrypt your secret. Paste your secret in the `Secret Info` section, ensure that the `Type` is `Text`, and click `Blindfold`.
+12. Wait for the encryption to complete and click `Apply`.
+
+![](./Screenshots/4-4.png)
+
+13. Click `Apply` and `Save and Exit`.
 
 <br>
 
@@ -180,11 +202,14 @@ Verify the configured RRs are resolving correctly from F5XC name server.
 
 <br>
 
+<!--
 ## Validation
 *[TODO: How the customer can verify that it is all working]*
 
 <br>
+-->
 
+<!--
 ## Resources
 *[TODO: A list of any relevant or useful resources that would help the customer to understand the proposed solution or to make the most of their investment]*
 * *[(optional) A simulator scenario on [the simulator site](https://simulator.f5.com/)]*
@@ -192,16 +217,21 @@ Verify the configured RRs are resolving correctly from F5XC name server.
 * *[(optional) An overview video on the [F5 Youtube Channel](https://www.youtube.com/user/f5networksinc)]*
 
 <br>
+-->
 
+<!--
 ## FAQ / Support
 * *[TODO: Things to check if there are issues, or how to engage F5 for support.]*
 * *[TODO: How to engage Professional Services]*
 
 <br>
+-->
 
+<!--
 ## Next Steps
 * *[TODO: How to buy or engage Sales]*
 * *[TODO: Link(s) to discussion or community group on DevCentral]*
 * *[TODO: Adjacent F5 content that may be useful or pertinent.]*
 
 <br>
+-->
