@@ -93,7 +93,7 @@ Configuration steps:
 
 ![](./Screenshots/2-2.png)
 
-7. Click `Add Item` to create resource records, for example, A, AAAA, CNAME, ALIAS etc.
+7. Click `Add Item` to create resource records, for example, A, AAAA, CNAME, ALIAS, etc.
 
 ![](./Screenshots/2-3.png)
 
